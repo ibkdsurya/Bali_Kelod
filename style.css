@@ -7,8 +7,9 @@
     text-decoration: none;
     list-style: none;
     line-height: 102%;
-    /* box-sizing: border-box; */
 }
+
+
 
 html {
     scroll-behavior: smooth;
@@ -1386,4 +1387,144 @@ p#myBtn-1 img, p#myBtn-2 img {
     padding: 100px ;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    nav .l-nav{
+        display: none!important;
+    }
+    nav .r-nav{
+        display: none!important;
+    }
+    nav .m-nav{
+        width: 100%!important;
+    }
+    .card-r h2, .card-r h1 {
+        font-size: 24px !important;
+    }
+    .card-r div {
+        padding: 20px !important;
+    }
+    .card-container a {
+        font-size: 70% !important;
+    }
+    .card-culinary {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .card-culinary .des-culinary{
+        width: 100%;
+    }
+    .card-culinary .map-culinary{
+        width: 100%;
+    }
+    .head-culinary p{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    
+    .thumbnail{
+        display: none;
+    }
+    .card-container a {
+        width: 50%;
+        flex: 0 0 calc(50% - 20px);
+    }
+    .hotel-choose div p{
+        display: none;
+    }
+    .about-map-detail{
+        flex-direction: column;
+    }
+    .about-detail{
+        width: 100% ;
+    }
+    .map-detail{
+        width: 100%;
+    }
+    .food{
+        flex-direction: column;
+    }
+    .food div{
+        width: 100%;
+    }
+    
+    
+}
+@media screen and (max-width: 650px){
+    footer .container {
+        padding: 0px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .container .bag{
+        width: 100%!important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center!important;
+
+    }
+    footer .container .bag div{
+        width: 100%!important;
+        display: flex!important;
+        align-items: center!important;
+        justify-content: center!important;
+    }
+    .hotel-choose{
+        margin: 10px 20px!important;
+    }
+    .card-r{
+        width: 100%;
+        align-items: center;
+    }
+    .card-r div{
+        width: 300px!important;
+    }
+    .m-nav a{
+        padding: 15px 0px;
+    }
+    .stays-main-card-container, .culinary, .main-card-container, .reason,.main-des, .detail-head, .about-map-detail{
+        padding: 10px 20px;
+    }
+    .detail-head{
+        margin-top: 150px;
+    }
+    nav .m-nav{
+        font-size: 12px!important;
+        gap: 0px;
+    }
+    .card-container a {
+        width: 100%;
+        flex: 0 0 calc(100% - 20px);
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer div{
+        width: 100%;
+    }
+    .card-r{
+        flex-direction: column;
+        height: auto;
+    }
+    .stays-card-container a{
+        width: 100%;
+    }
+    .hotel{
+        height: auto!important;
+    }
+    .hotel-choose{
+        flex-direction: column!important;
+    }
+    .hotel-choose div{
+        width: 100%!important;
+    }
+    
+}
+@media screen and (max-width: 425px){
+    .m-nav a{
+        font-size: 8px;
+    }
 }
