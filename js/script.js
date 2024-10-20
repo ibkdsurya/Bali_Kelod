@@ -9,64 +9,67 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
-// js bagian destinasi
-const track = document.getElementById("image-track");
+function myFunction(detailId, btnId) {
+  var moreText = document.getElementById(detailId);
+  var btnText = document.getElementById(btnId);
 
-const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
-
-const handleOnUp = () => {
-    track.dataset.mouseDownAt = "0";  
-    track.dataset.prevPercentage = track.dataset.percentage;
+  if (moreText.style.display === "none") {
+      moreText.style.display = "block";
+      btnText.innerHTML = btnText.innerHTML.replace('chevron.png', 'chevron-up.png');
+  } else {
+      moreText.style.display = "none";
+      btnText.innerHTML = btnText.innerHTML.replace('chevron-up.png', 'chevron.png');
   }
-  
-  const handleOnMove = e => {
-    if(track.dataset.mouseDownAt === "0") return;
-    
-    const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-          maxDelta = window.innerWidth / 2;
-    
-    const percentage = (mouseDelta / maxDelta) * -100,
-          nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-          nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
-    
-    track.dataset.percentage = nextPercentage;
-    
-    track.animate({
-      transform: `translate(${nextPercentage}%, -50%)`
-    }, { duration: 1200, fill: "forwards" });
-    
-    for(const image of track.getElementsByClassName("image")) {
-      if (!isNaN(nextPercentage)){
-        image.animate({
-          objectPosition: `${100 + parseInt(nextPercentage)}% center`
-        }, { duration: 1200, fill: "forwards" });
-        }
-      }
-  }
-
-
-window.onmousedown = e => handleOnDown(e);
-
-window.ontouchstart = e => handleOnDown(e.touches[0]);
-
-window.onmouseup = e => handleOnUp(e);
-
-window.ontouchend = e => handleOnUp(e.touches[0]);
-
-window.onmousemove = e => handleOnMove(e);
-
-window.ontouchmove = e => handleOnMove(e.touches[0]);
-
-// pop up image destinasi
-document.querySelectorAll('.destinasi img','.destinasi p').forEach(image =>{
-image.onclick = () =>{
-document.querySelector('.popup-image').style.display = 'block';
-document.querySelector('.popup-image img').src = image.getAttribute('src');
-document.querySelector('.popup-image p').src = image.getAttribute('src');
-
 }
+
+
+
+function showCategoryStays(categorystays) {
+  const categoriesstays = document.querySelectorAll('.stays-main-card-container');
+  categoriesstays.forEach(section => {
+      section.style.display = 'none';
+  });
+
+  document.getElementById(categorystays).style.display = 'block';
+
+  const buttons = document.querySelectorAll('.choose-head button');
+  buttons.forEach(button => {
+      button.classList.remove('active');
+  });
+
+  document.getElementById(`${categorystays}-btn`).classList.add('active');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.m-nav a');
+
+  window.addEventListener('scroll', function() {
+      let current = '';
+
+      sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          console.log(`Section: ${section.id}, Top: ${sectionTop}, Height: ${sectionHeight}, PageYOffset: ${pageYOffset}`);
+
+          if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+              current = section.getAttribute('id');
+          }
+      });
+
+      console.log(`Current section: ${current}`);
+
+      navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href').includes(current)) {
+              link.classList.add('active');
+          }
+      });
+  });
 });
-document.querySelector('.popup-image span').onclick = ()=>{
-  document.querySelector('.popup-image').style.display = 'none';
-  
-}
+
+window.addEventListener('load', function() {
+  const loadingScreen = document.getElementById('loading-screen');
+  loadingScreen.style.display = 'none';
+  document.body.style.overflow = 'auto'; 
+});

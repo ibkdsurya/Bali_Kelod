@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,12 @@
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/d8c1e370d8.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <div id="loading-screen">
+        <div class="spinner">
+        </div>
+    </div>
     <nav id="nav">
         <div class="l-nav">
             <h3>
@@ -16,188 +22,794 @@
             </h3>
         </div>
         <div class="m-nav">
-               <a class="active" href="">HOME</a>
-               <a href="destination.html">DESTINATION</a>
-               <img src="assets/logo.png" alt="">
-               <a href="">TRIP</a>
-               <a href="">CONTACT</a>
+            <a class="active" href="#home">HOME</a>
+            <a href="#destinations">DESTINATION</a>
+            <img src="assets/logo.png" alt="">
+            <a href="#hotels">HOTEL</a>
+            <a href="#culiner">CULINARY</a>
         </div>
         <div class="r-nav">
-                <a href=""><img src="assets/en.png" alt="">EN</a>
-                <a href=""><img src="assets/id.png" alt="">ID</a>
+
         </div>
-        
+
     </nav>
-    <main>
-        <img src="main/SKY.webp" data-speedx="0.3" data-speedy="0.32" class="parallax sky" alt="">
-        <img src="main/1.webp" data-speedx="0.27" data-speedy="0.32" class="parallax part1" alt="">
-        <div class="text parallax"data-speedx="0.2"data-speedy="0.25">
-        <h2>EXPLORE THE NORTH SIDE OF</h2>
-        <h1>BALI</h1>
-        </div>
-        <img src="main/2.webp" class="parallax part2" data-speedx="0.185"data-speedy="0.190" alt="">
-        <img src="main/3.webp" class="parallax part3" data-speedx="0.1" data-speedy="0.105"alt="">
-        <img src="main/4.webp" class="parallax part4" data-speedx="0.07"data-speedy="0.1" alt="">
-        <img src="main/5.webp" class="parallax part5" data-speedx="0.065" data-speedy="0.70"alt="">
-        <img src="main/6.webp" class="parallax part6" data-speedx="0.1" data-speedy="0.09" alt="">
-        <div class="btn parallax"data-speedx="0.1"data-speedy="0.09">
-            <a target="_self" href="#reason">Go Explore</a>
+    <section id="home">
+        <main>
+            <img src="main/SKY.webp" data-speedx="0.3" data-speedy="0.32" class="parallax sky" alt="">
+            <img src="main/1.webp" data-speedx="0.27" data-speedy="0.32" class="parallax part1" alt="">
+            <div class="text parallax" data-speedx="0.2" data-speedy="0.25">
+                <h2>EXPLORE THE NORTH SIDE OF</h2>
+                <h1>BALI</h1>
             </div>
-        <img src="main/7.webp" class="parallax part7" data-speedx="0.0235" data-speedy="0.0240" alt="">
-        <img src="main/8.webp" alt="" class="parallax part8" data-speedx="0.0235" data-speedy="0.0240">
-    </main>
-    <div class="about">
-        <img src="about/1.webp" class="parallax part9" data-speedx="0.085"data-speedy="0.090" alt="">
-        <img src="about/2.webp" class="parallax part10" data-speedx="0.085"data-speedy="0.090" alt="">
-        <img src="about/3.webp" class="parallax part11" data-speedx="0.07"data-speedy="0.06" alt="">
-        <div class="text-about parallax" data-speedx="0.07"data-speedy="0.06">
-            <h1>Introducing Bali Kelod</h1>
-            <p>Located far from the bustling tourist hubs of southern Bali, Buleleng in Bali Utara offers a different side of the island—one that is serene, unspoiled, and filled with natural wonders. Buleleng is known for its breathtaking landscapes, including dramatic coastlines, lush hillsides, and hidden waterfalls. It's a region where nature, culture, and tranquility blend harmoniously, offering a peaceful retreat for those who wish to escape the crowds and connect with the essence of Bali.</p>
-        </div>
-    </div>
-    <div class="reason" id="reason">
-        <div class="text-reason">
-            <h1>What Kind We Offer For You</h1>
-            <p>We're here with various types of offers that you can get <br>with your family in Bali with Bali Tour</p>
-        </div>
-        <div class="card-r">
-            <div class="card-r 1">
-                <h1>01</h1>
-                <h2>
-                    Various <br> Destination
-                </h2>
-                <img src="reason/1.png" alt="">
-                <p>Various place and hidden gems that we recommendating for you</p>
-                <a href="">LEARN MORE   ></a>
+            <img src="main/2.webp" class="parallax part2" data-speedx="0.185" data-speedy="0.190" alt="">
+            <img src="main/3.webp" class="parallax part3" data-speedx="0.1" data-speedy="0.105" alt="">
+            <img src="main/4.webp" class="parallax part4" data-speedx="0.07" data-speedy="0.1" alt="">
+            <img src="main/5.webp" class="parallax part5" data-speedx="0.065" data-speedy="0.70" alt="">
+            <img src="main/6.webp" class="parallax part6" data-speedx="0.1" data-speedy="0.09" alt="">
+            <div class="btn parallax" data-speedx="0.1" data-speedy="0.09">
+                <a target="_self" href="#explore">Go Explore</a>
             </div>
-            <div class="card-r 2">
-                <h1>02</h1>
-                <h2>
-                    Not only place <br>But also the Citizen
-                </h2>
-                <img src="reason/2.png" alt="">
-                <p>Meet local culture and citizens that are friendly to you</p>
-                <a href="">LEARN MORE  ></a>
-            </div>
-            <div class="card-r 3">
-                <h1>03</h1>
-                <h2>
-                    Everything Is Included
-                </h2>
-                <img src="reason/3.png" alt="">
-                <p>Culinary, Trip recomendating, and Place to rest for you</p>
-                <a href="">LEARN MORE   ></a>
+            <img src="main/7.webp" class="parallax part7" data-speedx="0.0235" data-speedy="0.0240" alt="">
+            <img src="main/8.webp" alt="" class="parallax part8" data-speedx="0.0235" data-speedy="0.0240">
+        </main>
+        <div class="about" id="explore">
+            <img src="about/1.webp" class="parallax part9" data-speedx="0.085" data-speedy="0.090" alt="">
+            <img src="about/2.webp" class="parallax part10" data-speedx="0.085" data-speedy="0.090" alt="">
+            <img src="about/3.webp" class="parallax part11" data-speedx="0.07" data-speedy="0.06" alt="">
+            <div class="text-about parallax" data-speedx="0.07" data-speedy="0.06">
+                <h1>Introducing Bali Kelod</h1>
+                <p>Located far from the bustling tourist hubs of southern Bali, Buleleng in Bali Utara offers a
+                    different side of the island—one that is serene, unspoiled, and filled with natural wonders.
+                    Buleleng is known for its breathtaking landscapes, including dramatic coastlines, lush hillsides,
+                    and hidden waterfalls. It's a region where nature, culture, and tranquility blend harmoniously,
+                    offering a peaceful retreat for those who wish to escape the crowds and connect with the essence of
+                    Bali.</p>
             </div>
         </div>
-    </div>
-
-     <!-- bagian destinasi -->
-     <section class="destinasi" id="destinasi">
-        <div class="text-destinasi">
-            <div class="div">
-                <h1>Let's See Buleleng With Us, You and Your Family </h1>
+        <div class="reason">
+            <div class="text-reason">
+                <h1>What Kind We Offer For You</h1>
+                <p>We're here with various types of offers that you can get <br>with your family in Bali with Bali Tour
+                </p>
             </div>
-            <div class="div">
-                <p>We're an online based travel agent, allowing us to recomendating various destination for you. Gives information from destination to your rest place</p>
-                <a href=""><button>
-                    EXPLORE MORE
-                </button></a> 
-            </div>
-        </div>
-      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-          <div class="title-destinasi">
-              <img class="image" src="destination/Sekumpul.png" draggable="false">
-              <h1>Sekumpul Waterfall</h1>
-          </div>
-          <div class="title-destinasi">
-              <img class="image" src="destination/aling aling.webp" draggable="false">
-              <h1>Aling Aling Waterfall</h1>
-          </div>
-          <div class="title-destinasi">
-              <img class="image" src="destination/Tamblingan.webp" draggable="false">
-              <h1>Tamblingan Lake</h1>
-          </div>
-          <div class="title-destinasi">
-              <img class="image" src="destination/HotSpringBanjar.webp" draggable="false">
-              <h1>Hot Spring Banjar</h1>
-          </div>
-          <div class="title-destinasi">
-              <img class="image" src="destination/Poppins.webp"draggable="false">
-              <h1>Gatep Lawas</h1>
-          </div>
-          <div class="title-destinasi">
-              <img class="image" src="destination/Arrows Dive Centre Bali.webp" draggable="false">
-              <h1>Arrows Dive Centre Bali</h1>
-          </div>
-          
-      </div>
-      <div class="popup-image">
-          <span>&times;</span>
-          <img src="recourse/karangasem/lempuyang2.png" alt="">
-      </div>
-  </section>
-
-<div class="trip">
-    <div class="text-trip">
-        <h1>Trip Plan</h1>
-        <p>Start your vacation by choosing our holiday packages recomendation in Buleleng that we have provided</p>
-    </div>
-    <div class="content-trip">
-        <div class="trip-1">
-            <a href="">Waterfall</a>
-            <a href="">Beach</a>
-            <a href=""><i class="fa-solid fa-mountain" style="color: #ebe3e0;"></i> Mountain</a>
-            <a href="">Forest</a>
-        </div>
-        <div class="trip-2">
-        </div>
-    </div>
-</div>
-
-<footer>
-    <section class="container">
-        <div class="bag">
-            <div class="footer-img">
-                <img src="assets/footer.png" alt="">
-            </div>
-            <p>Get your exciting and memorable adventures across North Bali.</p>
-        </div>
-        <div class="bag">
-            <h3>Resource</h3>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Destination</a></li>
-                <li><a href="">Trip</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </div>
-        <div class="bag">
-            <h3>Support</h3>
-            <ul>
-                <li><a href="">Account</a></li>
-            </ul>
-        </div>
-        <div class="bag">
-            <h3>Our Contact</h3>
-            <ul>
-                <li><a href="">BaliKelod@gmail.com</a></li>
-                <div class="social-icon">
-                    <a href=""><img src="assets/fb.svg" alt=""></a>
-                    <a href=""><img src="assets/ig.svg" alt=""></a>
-                    <a href=""><img src="assets/yt.svg" alt=""></a>
+            <div class="card-r">
+                <div class="card-r 1">
+                    <h1>01</h1>
+                    <h2>
+                        Various <br> Destination
+                    </h2>
+                    <img src="reason/1.png" alt="">
+                    <p>Various place and hidden gems that we recommendating for you</p>
                 </div>
-            </ul>
+                <div class="card-r 2">
+                    <h1>02</h1>
+                    <h2>
+                        Not only place <br>But also the Citizen
+                    </h2>
+                    <img src="reason/2.png" alt="">
+                    <p>Meet local culture and citizens that are friendly to you</p>
+                </div>
+                <div class="card-r 3">
+                    <h1>03</h1>
+                    <h2>
+                        Everything Is Included
+                    </h2>
+                    <img src="reason/3.png" alt="">
+                    <p>Culinary, Package, and Place to rest for you</p>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="copyright">
-        <div class="empty"></div>
-        Copyright &copy; 2024 Bali Kelod All right reserved.
-    </section>
-</footer>
 
+    <section id="destinations">
+        <div class="slider">
+            <div class="list">
+                <div class="item active">
+                    <img src="destination/Tamblingan.webp">
+                    <div class="content">
+                        <p>Our Destination</p>
+                        <h2>Tamblingan Lake</h2>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="destination/lovina.jpg">
+                    <div class="content">
+                        <p>Our Destination</p>
+                        <h2>Lovina Beach</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="destination/Sekumpul.png">
+                    <div class="content">
+                        <p>Our Destination</p>
+                        <h2>Sekumpul Waterfall</h2>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="destination/menjangan1.jpg">
+                    <div class="content">
+                        <p>Our Destination</p>
+                        <h2>Menjangan Island</h2>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="destination/aling aling.webp">
+                    <div class="content">
+                        <p>Our Destination</p>
+                        <h2>Aling-Aling Waterfall</h2>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="destination/HotSpringBanjar.webp">
+                    <div class="content">
+                        <p>Our Destination</p>
+                        <h2>Hot Spring Banjar</h2>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="thumbnail">
+                <div class="arrows">
+                    <button id="prev">
+                        << /button>
+                </div>
+                <div class="item active">
+                    <img src="destination/Tamblingan.webp">
+                    <div class="content">
+                        Tamblingan Lake
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="destination/lovina.jpg">
+                    <div class="content">
+                        Lovina Beach
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="destination/Sekumpul.png">
+                    <div class="content">
+                        Sekumpul Waterfall
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="destination/menjangan1.jpg">
+                    <div class="content">
+                        Menjangan Island
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="destination/aling aling.webp">
+                    <div class="content">
+                        Aling-Aling Waterfall
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="destination/HotSpringBanjar.webp">
+                    <div class="content">
+                        Hot Spring Banjar
+                    </div>
+                </div>
+                <div class="arrow">
+                    <button id="next">></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-des">
+            <div class="head-main-des">
+                <h1>TOP 6 Most Popular Buleleng Destination</h1>
+                <p>Journey through Buleleng’s top attractions, each offering unique experiences and breathtaking views.
+                </p>
+            </div>
+        </div>
+
+        <div id="top" class="main-card-container">
+            <div class="card-container">
+                <a href="detail/aling-aling.html">
+                    <div class="card-main">
+                        <img class="main" src="destination/aling aling.webp" alt="">
+                        <h3>Aling - Aling Waterfall</h3>
+                        <p><span><img src="assets/address.png" alt=""></span>Sambangan Village, Sukasada District</p>
+                        <h4><span><img src="assets/star.png" alt=""></span>4.5 (354 Reviews)</h4>
+
+                        <h2>From IDR 20.000-650.000</h2>
+                        <p>2 Package</p>
+                    </div>
+                </a>
+                <a href="detail/lovina.html">
+                    <div class="card-main">
+                        <img class="main" src="destination/lovina.jpg" alt="">
+                        <h3>Lovina Beach</h3>
+                        <p><span><img src="assets/address.png" alt=""></span>Lovina Beach Street, Kalibukbuk District
+                        </p>
+                        <h4><span><img src="assets/star.png" alt=""></span>4.0 (1350+ Reviews)</h4>
+                        <h2>Free Entry</h2>
+                        <p>1 Package</p>
+                    </div>
+                </a>
+                <a href="detail/sekumpul.html">
+                    <div class="card-main">
+                        <img class="main" src="destination/Sekumpul.png" alt="">
+                        <h3>Sekumpul Waterfall</h3>
+                        <p><span><img src="assets/address.png" alt=""></span>Sekumpul Village, Sawan District</p>
+                        <h4><span><img src="assets/star.png" alt=""></span>4.5 (1380+ Reviews)</h4>
+
+                        <h2>From IDR 20.000-885.000</h2>
+                        <p>2 Package</p>
+                    </div>
+                </a>
+                <a href="detail/tamblingan.html">
+                    <div class="card-main">
+                        <img class="main" src="destination/Tamblingan.webp" alt="">
+                        <h3>Tamblingan Lake</h3>
+                        <p><span><img src="assets/address.png" alt=""></span>Munduk Village, Buleleng District</p>
+                        <h4><span><img src="assets/star.png" alt=""></span>4.5 (220+ Reviews)</h4>
+
+                        <h2>From IDR 10.000-450.000</h2>
+                        <p>2 Package</p>
+                    </div>
+                </a>
+                <a href="detail/menjangan.html">
+                    <div class="card-main">
+                        <img class="main" src="destination/menjangan3.jpg" alt="">
+                        <h3>Menjangan Island</h3>
+                        <p><span><img src="assets/address.png" alt=""></span>Sumber Klampok Village, Gerokgak District
+                        </p>
+                        <h4><span><img src="assets/star.png" alt=""></span>4.5 (1900+ Reviews)</h4>
+                        <h2>From IDR 10.000-1575.000</h2>
+                        <p>4 Package</p>
+                    </div>
+                </a>
+                <a href="detail/hot-spring.html">
+                    <div class="card-main">
+                        <img class="main" src="destination/HotSpringBanjar.webp" alt="">
+                        <h3>Hot Spring Banjar</h3>
+                        <p><span><img src="assets/address.png" alt=""></span>Banjar Village, Banjar District</p>
+                        <h4><span><img src="assets/star.png" alt=""></span>4.3 (3470+ Reviews)</h4>
+                        <h2>From IDR 15.000-45.000</h2>
+                        <p>2 Package</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <section id="hotels" class="">
+        <div class="hotel">
+            <img class="img" src="hotel/hotel-head.jpg" alt="">
+            <div class="hotel-head">
+                <h1>Find Your Best Staycation</h1>
+            </div>
+            <div class="hotel-choose">
+                <div class="hotels">
+                    <img src="hotel/hotel.jpg" alt="">
+                    <div class="choose-head">
+                        <div class="hotel-filter">
+                            <h2>Hotel</h2>
+                            <p>Comfortable and affordable hotels with scenic views</p>
+                        </div>
+                        <button class="active" id="hotel-btn" onclick="showCategoryStays('hotel')">Filter</button>
+                    </div>
+                </div>
+                <div class="resort">
+                    <img src="hotel/resort.jpg" alt="">
+                    <div class="choose-head">
+                        <div class="hotel-filter">
+                            <h2>Resort</h2>
+                            <p>Luxurious resorts offering complete facilities and serene locations</p>
+                        </div>
+                        <button id="resort-btn" onclick="showCategoryStays('resort')">Filter</button>
+                    </div>
+                </div>
+                <div class="villa">
+                    <img src="hotel/villa.jpg" alt="">
+                    <div class="choose-head">
+                        <div class="hotel-filter">
+                            <h2>Villas</h2>
+                            <p>20 availablePrivate villas with home-like comfort</p>
+                        </div>
+                        <button id="villa-btn" onclick="showCategoryStays('villa')">Filter</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="hotel" class="stays-main-card-container">
+            <div class="stays-card-head">
+                <h1>Most Visited Hotel in Buleleng</h1>
+                <p>Enjoy modern amenities and stunning views at Buleleng’s comfortable and affordable hotels</p>
+            </div>
+            <div class="stays-card-container">
+                <a target="_blank"
+                    href="https://www.booking.com/hotel/id/puri-bali-lovina3.en-gb.html?aid=803109&label=msn-6nZbEKN5lsMvFZRVhe8AKQ-80676845597748%3Atikwd-80677006668603%3Aloc-91%3Aneo%3Amte%3Alp150281%3Adec%3Aqspenginapan%20dekat%20pantai%20lovina&sid=008e602d77cc506876d29d934e331ba0&all_sr_blocks=154596505_88637175_3_1_0_470787;checkin=2024-10-20;checkout=2024-10-21;dest_id=-2697286;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=154596505_88637175_3_1_0_470787;hpos=1;matching_block_id=154596505_88637175_3_1_0_470787;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=154596505_88637175_3_1_0_470787_70000000;srepoch=1729415826;srpvid=edf741241d2700c8;type=total;ucfs=1&">
+                    <div class="stays-card-main">
+                        <img class="stays-main" src="hotel/puri.jpg" alt="">
+                        <h3>Puri Bali Hotel</h3>
+                        <p><span><img src="assets/address.png" alt=""></span>Mawar Street, Kalibukbuk District</p>
+                        <h4><span><img src="assets/star.png" alt=""></span>4.0 (1380 Reviews)</h4>
+                        <h2>IDR 400.000</h2>
+                        <p>1 night, 2 adults</p>
+                    </div>
+                </a>
+                <a target="_blank"
+                    href="https://www.booking.com/hotel/id/lovina-beach.en-gb.html?label=msn-6nZbEKN5lsMvFZRVhe8AKQ-80676845597748%3Atikwd-80677006668603%3Aloc-91%3Aneo%3Amte%3Alp150281%3Adec%3Aqspenginapan+dekat+pantai+lovina&utm_source=bing&utm_medium=cpc&utm_term=6nZbEKN5lsMvFZRVhe8AKQ&utm_content=Lovina+-+UFI%3A-2697286&utm_campaign=Accommodation+-+Indonesia&aid=803109">
+                    <div class="stays-card-main">
+                        <img class="stays-main" src="hotel/lovina.jpg" alt="">
+                        <h3>Lovina Beach Hotel</h3>
+                        <p><span><img src="assets/address.png" alt=""></span>Kaliasem Village, Kalibukbuk District</p>
+                        <h4><span><img src="assets/star.png" alt=""></span>4.0 (293 Reviews)</h4>
+                        <h2>IDR 290.000</h2>
+                        <p>1 night, 2 adults</p>
+                    </div>
+                </a>
+                <a target="_blank"
+                    href="https://www.booking.com/hotel/id/shanti-natural-panorama-view.en-gb.html?label=msn-3N8kvaM8sdsFqNxhmpWnCA-79989662293626%3Atidat-2331789285055035%3Aloc-91%3Aneo%3Amtb%3Alp144114%3Adec%3Aqshotel+dekat+aling+aling+waterfall&sid=008e602d77cc506876d29d934e331ba0&aid=1181029&ucfs=1&arphpl=1&dest_id=900048374&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=2a81324b3e9c00bc&srepoch=1729408160&from_sustainable_property_sr=1&from=searchresults">
+                    <div class="stays-card-main">
+                        <img class="stays-main" src="hotel/santi.jpg" alt="">
+                        <h3>Shanti Natural Panorama View Hotel</h3>
+                        <p><span><img src="assets/address.png" alt=""></span>Sambangan Village, Sukasada District</p>
+                        <h4><span><img src="assets/star.png" alt=""></span>4.7 (206 Reviews)</h4>
+                        <h2>IDR 1.530.000</h2>
+                        <p>1 night, 2 adults</p>
+                    </div>
+                </a>
+                <a target="_blank"
+                    href="https://www.booking.com/hotel/id/seribu-dreams-bungalow.en-gb.html?label=msn-3N8kvaM8sdsFqNxhmpWnCA-79989662293626%3Atidat-2331789285055035%3Aloc-91%3Aneo%3Amtb%3Alp144114%3Adec%3Aqshotel+dekat+aling+aling+waterfall&utm_source=bing&utm_medium=cpc&utm_term=3N8kvaM8sdsFqNxhmpWnCA%3Fmsclkid%3D566dc92ebd801ad6dc24ae3a147ee40c&utm_content=Other&utm_campaign=English_Indonesia+EN+ID&aid=1181029">
+                    <div class="stays-card-main">
+                        <img class="stays-main" src="hotel/bungalow.jpg" alt="">
+                        <h3>1000 Dream Bungalow</h3>
+                        <p><span><img src="assets/address.png" alt=""></span>Pemaron Village, Singaraja</p>
+                        <h4><span><img src="assets/star.png" alt=""></span>4.6 (537 Reviews)</h4>
+                        <h2>IDR 1.093.500</h2>
+                        <p>1 night, 2 adults</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div id="resort" class="stays-main-card-container" style="display: none;">
+            <div class="stays-card-head">
+                <h1>Most Visited Resort in Buleleng</h1>
+                <p>Experience luxury and tranquility at Buleleng’s top-notch resorts with full facilities</p>
+            </div>
+            <div class="stays-card-container">
+                <a target="_blank"
+                    href="https://www.agoda.com/id-id/menjangan-dynasty-resort/hotel/bali-id.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1915013&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2024-10-29&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=IDR&isFreeOccSearch=false&tag=5a6a4995-90a0-4c2a-9882-0283f58b9483&tspTypes=17%2C5%2C16&los=1&searchrequestid=92e9a575-16ef-4511-a272-2c4ff4bcdc5b&ds=NG2HbMKQCMuuu4qE">
+                    <div class="stays-card-main">
+                        <img class="stays-main" src="../hotel/dynasty.webp" alt="">
+                        <h3>Menjangan Dynasty Resort</h3>
+                        <p><span><img src="../assets/address.png" alt=""></span>Pejarakan Village, Gerokgak District</p>
+                        <h4><span><img src="../assets/star.png" alt=""></span>4.5 (819 Reviews)</h4>
+                        <h2>IDR 1.413.000</h2>
+                        <p>1 night, 2 adults 1 children</p>
+                    </div>
+                </a>
+                <a target="_blank"
+                    href="https://www.agoda.com/id-id/mimpi-resort-menjangan/hotel/bali-id.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1915013&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2024-10-29&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=IDR&isFreeOccSearch=false&tag=5a6a4995-90a0-4c2a-9882-0283f58b9483&tspTypes=7%2C2%2C16&los=1&searchrequestid=92e9a575-16ef-4511-a272-2c4ff4bcdc5b&ds=NG2HbMKQCMuuu4qE">
+                    <div class="stays-card-main">
+                        <img class="stays-main" src="../hotel/mimpi.webp" alt="">
+                        <h3>Mimpi Resort Menjangan</h3>
+                        <p><span><img src="../assets/address.png" alt=""></span>Pemuteran Village, Buleleng District</p>
+                        <h4><span><img src="../assets/star.png" alt=""></span>4.3 (1159 Reviews)</h4>
+                        <h2>IDR 1012.000</h2>
+                        <p>1 night, 2 adults</p>
+                    </div>
+                </a>
+                <a target="_blank"
+                    href="https://www.agoda.com/id-id/naya-gawana-resort-spa/hotel/bali-id.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1915013&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2024-10-29&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=IDR&isFreeOccSearch=false&tag=5a6a4995-90a0-4c2a-9882-0283f58b9483&tspTypes=4%2C16&los=1&searchrequestid=92e9a575-16ef-4511-a272-2c4ff4bcdc5b&ds=NG2HbMKQCMuuu4qE">
+                    <div class="stays-card-main">
+                        <img class="stays-main" src="../hotel/naya.jpg" alt="">
+                        <h3>NAYA Gawana Resort & Spa</h3>
+                        <p><span><img src="../assets/address.png" alt=""></span>Munduk Village, Buleleng District</p>
+                        <h4><span><img src="../assets/star.png" alt=""></span>4.3 (324 Reviews)</h4>
+                        <h2>IDR 637.000</h2>
+                        <p>1 night, 2 adults</p>
+                    </div>
+                </a>
+                <a target="_blank"
+                    href="https://www.booking.com/hotel/id/kubu-beach-lovina.en-gb.html?label=msn-6nZbEKN5lsMvFZRVhe8AKQ-80676845597748%3Atikwd-80677006668603%3Aloc-91%3Aneo%3Amte%3Alp150281%3Adec%3Aqspenginapan+dekat+pantai+lovina&utm_source=bing&utm_medium=cpc&utm_term=6nZbEKN5lsMvFZRVhe8AKQ&utm_content=Lovina+-+UFI%3A-2697286&utm_campaign=Accommodation+-+Indonesia&aid=803109">
+                    <div class="stays-card-main">
+                        <img class="stays-main" src="hotel/beachclub.jpg" alt="">
+                        <h3>Lovina Beach Club & Resort</h3>
+                        <p><span><img src="assets/address.png" alt=""></span>Tukad Mungga Street, Kalibukbuk District
+                        </p>
+                        <h4><span><img src="assets/star.png" alt=""></span>3.9 (584 Reviews)</h4>
+                        <h2>IDR 960.000</h2>
+                        <p>1 night, 2 adults</p>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+
+        <div id="villa" class="stays-main-card-container" style="display: none;">
+            <div class="stays-card-head">
+                <h1>Most Visited Villas in Buleleng</h1>
+                <p>Relax in private villas in Buleleng, featuring personal pools and spacious living areas</p>
+            </div>
+            <div class="stays-card-container">
+                <div class="stays-card-container">
+                    <a target="_blank" href="https://www.booking.com/hotel/id/munduk-menir-villas.en-gb.html?aid=1181029&label=msn-%2AtvvyrMR90GYBaB1BM3HCQ-80264540053172%3Atidat-2332064162981760%3Aloc-91%3Aneo%3Amtb%3Alp144114%3Adec%3Aqshotel%20dekat%20danau%20tamblingan&sid=008e602d77cc506876d29d934e331ba0&all_sr_blocks=239833403_101566115_2_2_0_211273;checkin=2024-10-20;checkout=2024-10-21;dist=0;group_adults=2;group_children=0;hapos=6;highlighted_blocks=239833403_101566115_2_2_0_211273;hpos=6;matching_block_id=239833403_101566115_2_2_0_211273;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=distance_from_search;sr_pri_blocks=239833403_101566115_2_2_0_211273_197390600;srepoch=1729413626;srpvid=d2b93ceb513300d3;type=total;ucfs=1&">
+                        <div class="stays-card-main">
+                            <img class="stays-main" src="../hotel/menir.jpg" alt="">
+                            <h3>Munduk Menir Villas</h3>
+                            <p><span><img src="../assets/address.png" alt=""></span>Munduk Village, Buleleng District</p>
+                            <h4><span><img src="../assets/star.png" alt=""></span>4.3 (293 Reviews)</h4>
+                            <h2>IDR 1.973.000</h2>
+                            <p>1 night, 2 adults</p>
+                        </div>
+                    </a>
+                    <a target="_blank"
+                        href="https://www.booking.com/hotel/id/munduk-kupang-sekumpul-villa-singaraja.en-gb.html?aid=1181029&label=msn-3N8kvaM8sdsFqNxhmpWnCA-79989662293626%3Atidat-2331789285055035%3Aloc-91%3Aneo%3Amtb%3Alp144114%3Adec%3Aqshotel%20dekat%20aling%20aling%20waterfall&sid=008e602d77cc506876d29d934e331ba0&all_sr_blocks=1079920601_393870382_0_1_0;checkin=2024-10-20;checkout=2024-10-21;dest_id=900118750;dest_type=landmark;dist=0;group_adults=2;group_children=0;hapos=3;highlighted_blocks=1079920601_393870382_0_1_0;hpos=3;matching_block_id=1079920601_393870382_0_1_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=1079920601_393870382_0_1_0__87933600;srepoch=1729411886;srpvid=95ff39866be901b3;type=total;ucfs=1&">
+                        <div class="stays-card-main">
+                            <img class="stays-main" src="../hotel/munduk.jpg" alt="">
+                            <h3>Munduk Kupang Sekumpul Villa</h3>
+                            <p><span><img src="../assets/address.png" alt=""></span>Sekumpul Village, Sawan District</p>
+                            <h4><span><img src="../assets/star.png" alt=""></span>4.5 (159 Reviews)</h4>
+                            <h2>IDR 1.099.575</h2>
+                            <p>1 night, 2 adults</p>
+                        </div>
+                    </a>
+                    <a target="_blank"
+                        href="https://www.booking.com/hotel/id/taman-dari.en-gb.html?aid=1181029&label=msn-3N8kvaM8sdsFqNxhmpWnCA-79989662293626%3Atidat-2331789285055035%3Aloc-91%3Aneo%3Amtb%3Alp144114%3Adec%3Aqshotel%20dekat%20aling%20aling%20waterfall&sid=008e602d77cc506876d29d934e331ba0&all_sr_blocks=1041526603_389638129_2_1_0;checkin=2024-10-20;checkout=2024-10-21;dest_id=900118750;dest_type=landmark;dist=0;group_adults=2;group_children=0;hapos=4;highlighted_blocks=1041526603_389638129_2_1_0;hpos=4;matching_block_id=1041526603_389638129_2_1_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=1041526603_389638129_2_1_0__76363636;srepoch=1729412063;srpvid=95ff39866be901b3;type=total;ucfs=1&">
+                        <div class="stays-card-main">
+                            <img class="stays-main" src="../hotel/taman-dari.jpg" alt="">
+                            <h3>Taman Dari Villa</h3>
+                            <p><span><img src="../assets/address.png" alt=""></span>Sekumpul Village, Sawan District</p>
+                            <h4><span><img src="../assets/star.png" alt=""></span>4.6 (144 Reviews)</h4>
+                            <h2>IDR 770.000</h2>
+                            <p>1 night, 2 adults</p>
+                        </div>
+                    </a>
+                    <a target="_blank"
+                        href="https://www.booking.com/hotel/id/villa-manayasa.en-gb.html?aid=1181029&label=msn-3N8kvaM8sdsFqNxhmpWnCA-79989662293626%3Atidat-2331789285055035%3Aloc-91%3Aneo%3Amtb%3Alp144114%3Adec%3Aqshotel%20dekat%20aling%20aling%20waterfall&sid=008e602d77cc506876d29d934e331ba0&dest_id=-2697286;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1729408475;srpvid=d4b232e8f27601bc;type=total;ucfs=1&">
+                        <div class="stays-card-main">
+                            <img class="stays-main" src="hotel/Manayasa.jpg" alt="">
+                            <h3>Villa Manayasa</h3>
+                            <p><span><img src="assets/address.png" alt=""></span>Celuk Buluh Lovina Street, Buleleng</p>
+                            <h4><span><img src="assets/star.png" alt=""></span>4.6 (215 Reviews)</h4>
+                            <h2>IDR 517.500</h2>
+                            <p>1 night, 2 adults</p>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="culinary" id="culiner">
+        <div class="head-culinary">
+            <h1>
+                The 5 Best Food Place In Buleleng Regency
+            </h1>
+            <p>If you're a food lover, Buleleng District in Bali is a treasure trove waiting to be explored. From the
+                serene shores of Lovina Beach to the vibrant streets of Singaraja, this region is home to a diverse
+                array of dining spots that showcase the rich flavors of Asian cuisine.</p>
+        </div>
+        <div class="card-culinary">
+            <div class="des-culinary">
+                <h1>The Artha Kitchen, Singaraja Anturan</h1>
+                <img class="place" src="culinary/the-artha-kitchen-a-restaurant.jpg" alt="">
+                <p><span><img src="assets/star.png" alt="">4.4 (900 Reviews)</span></p>
+                The Artha Kitchen is a cozy restaurant located on the side of the Anturan-Lovina Highway. It offers both
+                indoor and outdoor seating, providing a comfortable dining experience with air conditioning inside and a
+                relaxed atmosphere outside. The restaurant is known for its friendly staff and welcoming ambiance,
+                making it a great spot for families and friends to enjoy a meal together
+                <h2>TOP MENU</h2>
+                <div class="food">
+                    <div class="food-card">
+                        <img src="culinary/arta-menu1.webp" alt="">
+                        <h2>Sweet and Sour Fried Fish with Sauce.</h2>
+                        <h1>IDR 27.000</h1>
+                        <a target="_blank"
+                            href="https://gofood.co.id/bali/restaurant/the-artha-kitchen-singaraja-anturan-3190729e-7684-43df-8517-409c4724f611?page=1">Buy
+                            The Food</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="culinary/arta-menu2.webp" alt="">
+                        <h2>Chicken Curry + Rice</h2>
+                        <h1>IDR 29.000</h1>
+                        <a target="_blank"
+                            href="https://gofood.co.id/bali/restaurant/the-artha-kitchen-singaraja-anturan-3190729e-7684-43df-8517-409c4724f611?page=1">Buy
+                            The Food</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="culinary/arta-menu3.webp" alt="">
+                        <h2>Fried Rice Chicken Katsu</h2>
+                        <h1>IDR 29.000</h1>
+                        <a target="_blank"
+                            href="https://gofood.co.id/bali/restaurant/the-artha-kitchen-singaraja-anturan-3190729e-7684-43df-8517-409c4724f611?page=1">Buy
+                            The Food</a>
+                    </div>
+                </div>
+            </div>
+            <div class="map-culinary">
+                <h2>Location</h2>
+                <p><span><img src="assets/address.png" alt=""></span>Singaraja-Gilimanuk Street, Anturan, Buleleng
+                    District, Buleleng Regency</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.5446043073252!2d115.04478727364693!3d-8.147754191882518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd19b8ef42db2cd%3A0xca819501c870223f!2sThe%20Artha%20Kitchen!5e0!3m2!1sid!2sid!4v1729393544795!5m2!1sid!2sid"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="button">
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/The+Artha+Kitchen/@-8.147754,115.047362,16z/data=!4m6!3m5!1s0x2dd19b8ef42db2cd:0xca819501c870223f!8m2!3d-8.1477542!4d115.0473622!16s%2Fg%2F11h4lnylx_?hl=id&entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D"><button><img
+                                src="assets/google maps.png" alt="">Open On Google Maps</button></a>
+                    <a target="_blank"
+                        href="https://gofood.co.id/bali/restaurant/the-artha-kitchen-singaraja-anturan-3190729e-7684-43df-8517-409c4724f611?page=1"><button>Visit
+                            Online</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-culinary">
+            <div class="des-culinary">
+                <h1>Nasi Bakar SOS, Sukasada</h1>
+                <img class="place" src="culinary/SOS.jpg" alt="">
+                <p><span><img src="assets/star.png" alt="">4.6 (700+ Reviews)</span></p>
+                Nasi Bakar SOS is a popular eatery in Sukasada, known for its delicious and unique take on traditional
+                Indonesian cuisine. The restaurant specializes in Nasi Bakar, which is rice wrapped in banana leaves and
+                grilled to perfection, infusing it with a smoky aroma. They offer a variety of fillings, including
+                chicken, seafood, and vegetarian options, all paired with flavorful sambals and fresh herbs.
+                <h2>TOP MENU</h2>
+                <div class="food">
+                    <div class="food-card">
+                        <img src="culinary/SOS1.webp" alt="">
+                        <h2>Nasi Bakar 2 in 1</h2>
+                        <h1>IDR 14.000</h1>
+                        <a target="_blank"
+                            href="https://gofood.co.id/bali/restaurant/nasi-bakar-sos-sukasada-e66a4628-db73-47d2-8423-6981c83739cb?page=1">Buy
+                            The Food</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="culinary/SOS2.webp" alt="">
+                        <h2>Nasi Bakar Ayam Betutu</h2>
+                        <h1>IDR 13.800</h1>
+                        <a target="_blank"
+                            href="https://gofood.co.id/bali/restaurant/nasi-bakar-sos-sukasada-e66a4628-db73-47d2-8423-6981c83739cb?page=1">Buy
+                            The Food</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="culinary/SOS3.webp" alt="">
+                        <h2>Nasi Bakar Pindang Sambel Embe</h2>
+                        <h1>IDR 29.000</h1>
+                        <a target="_blank"
+                            href="https://gofood.co.id/bali/restaurant/nasi-bakar-sos-sukasada-e66a4628-db73-47d2-8423-6981c83739cb?page=1">Buy
+                            The Food</a>
+                    </div>
+                </div>
+            </div>
+            <div class="map-culinary">
+                <h2>Location</h2>
+                <p><span><img src="assets/address.png" alt=""></span>Sambangan, Sukasada District, Buleleng Regency</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.6911442256983!2d115.08413367364668!3d-8.132892491896916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd19b1d49409c27%3A0x13a29cffbee4296c!2sNasi%20Bakar%20SOS%20I%20(Sambangan)!5e0!3m2!1sid!2sid!4v1729394727787!5m2!1sid!2sid"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="button">
+                    <a target="_blank"
+                        href="https://www.google.com/maps?ll=-8.132892,115.086709&z=16&t=m&hl=id&gl=ID&mapclient=embed&cid=1414865855180974444"><button><img
+                                src="assets/google maps.png" alt="">Open On Google Maps</button></a>
+                    <a target="_blank"
+                        href="https://gofood.co.id/bali/restaurant/nasi-bakar-sos-sukasada-e66a4628-db73-47d2-8423-6981c83739cb?page=1"><button>Visit
+                            Online</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-culinary">
+            <div class="des-culinary">
+                <h1>Secret Garden Restaurant</h1>
+                <img class="place" src="culinary/Secret Garden Restaurant.jpg" alt="">
+                <p><span><img src="assets/star.png" alt="">4.9 (1220+ Reviews)</span></p>
+                Nestled in a serene garden setting, Secret Garden Restaurant is lauded for its intimate and tranquil
+                atmosphere, providing a picturesque backdrop for any dining occasion. Guests have called out the
+                delectable cuisine, often labeling it as the pinnacle of gastronomy in the area, complemented by its
+                romantic ambiance.
+                <h2>CUISINES</h2>
+                <div class="food">
+                    <div class="food-card">
+                        <img src="culinary/secret1.jpg" alt="">
+                        <h1>Sea Food</h1>
+                        <a
+                            href="https://www.tripadvisor.com/Restaurant_Review-g1600236-d8368942-Reviews-Secret_Garden_Restaurant-Anturan_Lovina_Beach_Buleleng_District_Buleleng_Regency.html">Visit
+                            Online</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="culinary/secret2.jpg" alt="">
+                        <h1>International Dishes</h1>
+                        <a
+                            href="https://www.tripadvisor.com/Restaurant_Review-g1600236-d8368942-Reviews-Secret_Garden_Restaurant-Anturan_Lovina_Beach_Buleleng_District_Buleleng_Regency.html">Visit
+                            Online</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="culinary/secret3.jpg" alt="">
+                        <h1>Indonesian Dishes</h1>
+                        <a
+                            href="https://www.tripadvisor.com/Restaurant_Review-g1600236-d8368942-Reviews-Secret_Garden_Restaurant-Anturan_Lovina_Beach_Buleleng_District_Buleleng_Regency.html">Visit
+                            Online</a>
+                    </div>
+                </div>
+            </div>
+            <div class="map-culinary">
+                <h2>Location</h2>
+                <p><span><img src="assets/address.png" alt=""></span>Pura Dalem Street, Anturan, Lovina Beach, Buleleng
+                    District, Buleleng Regency</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6539.52094763581!2d115.04653854887655!3d-8.148104402198415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd19ae2ffdbb0bb%3A0x1b7f13f189c6214b!2sSecret%20Garden%20Restaurant!5e0!3m2!1sid!2sid!4v1729398942514!5m2!1sid!2sid"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="button">
+                    <a target="_blank"
+                        href="https://www.google.com/maps?ll=-8.149365,115.049395&z=15&t=m&hl=id&gl=ID&mapclient=embed&cid=1981324289185816907"><button><img
+                                src="assets/google maps.png" alt="">Open On Google Maps</button></a>
+                    <a target="_blank"
+                        href="https://www.tripadvisor.com/Restaurant_Review-g1600236-d8368942-Reviews-Secret_Garden_Restaurant-Anturan_Lovina_Beach_Buleleng_District_Buleleng_Regency.html"><button>Visit
+                            Online</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-culinary">
+            <div class="des-culinary">
+                <h1>Food And Drink Corner, Anturan</h1>
+                <img class="place" src="culinary/fadc.webp" alt="">
+                <p><span><img src="assets/star.png" alt="">4.3 (200+ Reviews)</span></p>
+                Food And Drink Corner is a charming eatery located in Anturan, offering a diverse menu that caters to a
+                variety of tastes. The restaurant is known for its delicious Ayam Geprek (Crispy Chicken with Sambal)
+                The restaurant’s affordable prices and generous portions make it a popular choice among both locals and
+                tourists exploring the culinary scene in Buleleng
+                <h2>TOP MENU</h2>
+                <div class="food">
+                    <div class="food-card">
+                        <img src="culinary/fadc1.webp" alt="">
+                        <h2>Ayam Geprek Crispy + Rice + Ice Tea</h2>
+                        <h1>IDR 29.000</h1>
+                        <a target="_blank"
+                            href="https://gofood.co.id/en/bali/restaurant/food-and-drink-corner-anturan-2fb46a42-382f-4736-bcb1-2c5af0a51f59">Buy
+                            The Food</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="culinary/fadc2.webp" alt="">
+                        <h2>Ayam Geprek Crispy Mozzarella Cheese + Rice + Ice Tea</h2>
+                        <h1>IDR 29.000</h1>
+                        <a target="_blank"
+                            href="https://gofood.co.id/en/bali/restaurant/food-and-drink-corner-anturan-2fb46a42-382f-4736-bcb1-2c5af0a51f59">Buy
+                            The Food</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="culinary/fadc3.webp" alt="">
+                        <h2>Chicken Fuyung Hay</h2>
+                        <h1>IDR 27.000</h1>
+                        <a target="_blank"
+                            href="https://gofood.co.id/en/bali/restaurant/food-and-drink-corner-anturan-2fb46a42-382f-4736-bcb1-2c5af0a51f59">Buy
+                            The Food</a>
+                    </div>
+                </div>
+            </div>
+            <div class="map-culinary">
+                <h2>Location</h2>
+                <p><span><img src="assets/address.png" alt=""></span>Singaraja-Gilimanuk Street, Anturan, Buleleng
+                    District, Buleleng Regency</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1974.7573825974625!2d115.0428262496703!3d-8.150777099262575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd19b1c4c85c4fd%3A0xa6ce1b407064256c!2sJl.%20Singaraja-Gilimanuk%20No.99%2C%20Anturan%2C%20Kec.%20Buleleng%2C%20Kabupaten%20Buleleng%2C%20Bali%2081119!5e0!3m2!1sid!2sid!4v1729400744788!5m2!1sid!2sid"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="button">
+                    <a target="_blank"
+                        href="https://www.google.com/maps?ll=-8.150777,115.043602&z=17&t=m&hl=id&gl=ID&mapclient=embed&q=Jl.+Singaraja-Gilimanuk+No.99+Anturan+Kec.+Buleleng+Kabupaten+Buleleng,+Bali+81119"><button><img
+                                src="assets/google maps.png" alt="">Open On Google Maps</button></a>
+                    <a target="_blank"
+                        href="https://gofood.co.id/en/bali/restaurant/food-and-drink-corner-anturan-2fb46a42-382f-4736-bcb1-2c5af0a51f59"><button>Visit
+                            Online</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-culinary">
+            <div class="des-culinary">
+                <h1>Wakul Rasa</h1>
+                <img class="place" src="culinary/wakul.webp" alt="">
+                <p><span><img src="assets/star.png" alt="">4.4.8 (2000+ Reviews)</span></p>
+                Wakul Rasa is a delightful restaurant in Buleleng, known for its diverse and flavorful menu.The cozy
+                ambiance and friendly service make Wakul Rasa a popular spot for both locals and visitors. With its
+                affordable prices and delicious food, it’s a great place to enjoy a meal with family and friends
+                <h2>TOP MENU</h2>
+                <div class="food">
+                    <div class="food-card">
+                        <img src="culinary/wakul1.webp" alt="">
+                        <h2>Ayam Goreng Lengkuas</h2>
+                        <h1>IDR 23.000</h1>
+                        <a target="_blank"
+                            href="https://gofood.co.id/bali/restaurant/wakul-rasa-e0871d14-389d-48d5-ad38-c9a61873d7e9?page=1">Buy
+                            The Food</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="culinary/wakul2.webp" alt="">
+                        <h2>Nasi Kulit Ayam</h2>
+                        <h1>IDR 23.000</h1>
+                        <a target="_blank"
+                            href="https://gofood.co.id/bali/restaurant/wakul-rasa-e0871d14-389d-48d5-ad38-c9a61873d7e9?page=1">Buy
+                            The Food</a>
+                    </div>
+                    <div class="food-card">
+                        <img src="culinary/wakul3.webp" alt="">
+                        <h2>Paket Rasa 1</h2>
+                        <h1>IDR 30.000</h1>
+                        <a target="_blank"
+                            href="https://gofood.co.id/bali/restaurant/wakul-rasa-e0871d14-389d-48d5-ad38-c9a61873d7e9?page=1">Buy
+                            The Food</a>
+                    </div>
+                </div>
+            </div>
+            <div class="map-culinary">
+                <h2>Location</h2>
+                <p><span><img src="assets/address.png" alt=""></span>Sahadewa Street No.14, Banjar Tegal Buleleng
+                    District, Buleleng Regency</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63192.45963508212!2d115.0184945754285!3d-8.149362791479785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd19b1d78a56f91%3A0xe74aaea1ac0b9368!2sWakul%20Rasa!5e0!3m2!1sid!2sid!4v1729402285226!5m2!1sid!2sid"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="button">
+                    <a target="_blank"
+                        href="https://www.google.com/maps?ll=-8.117125,115.089099&z=12&t=m&hl=id&gl=ID&mapclient=embed&cid=16666325380437349224"><button><img
+                                src="assets/google maps.png" alt="">Open On Google Maps</button></a>
+                    <a target="_blank"
+                        href="https://gofood.co.id/bali/restaurant/wakul-rasa-e0871d14-389d-48d5-ad38-c9a61873d7e9?page=1"><button>Visit
+                            Online</button></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <section class="container">
+            <div class="bag">
+                <div class="footer-img">
+                    <img src="assets/footer.png" alt="">
+                </div>
+                <p>Get your exciting and memorable adventures across North Bali.</p>
+            </div>
+            <div class="bag">
+                <h3>Resource</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destination</a></li>
+                    <li><a href="3hotels">Hotel</a></li>
+                    <li><a href="#culiner">Culinary</a></li>
+                </ul>
+            </div>
+            <div class="bag">
+                <h3>Our Contact</h3>
+                <ul>
+                    <li><a href="">BaliKelod@gmail.com</a></li>
+                    <div class="social-icon">
+                        <a href=""><img src="assets/fb.svg" alt=""></a>
+                        <a href=""><img src="assets/ig.svg" alt=""></a>
+                        <a href=""><img src="assets/yt.svg" alt=""></a>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <section class="copyright">
+            <div class="empty"></div>
+            Copyright &copy; 2024 Bali Kelod All right reserved.
+        </section>
+    </footer>
     <script src="js/parallax.js"></script>
     <script src="js/script.js"></script>
-    
-   
+    <script src="js/app.js"></script>
+
+
+
 </body>
+
 </html>
